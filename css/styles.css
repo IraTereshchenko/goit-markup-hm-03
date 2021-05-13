@@ -12,6 +12,34 @@
   --logo-secondary-color: ##000000;
   --background-project-color: #eeeeee;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
 
 body {
   color: var(--main-color);
@@ -23,18 +51,33 @@ body {
 }
 
 /* ============= COMPONENTS ============= */
-.list {
-  list-style: none;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: teal;
 }
-
 /*========== END COMPONENTS ============= */
 
 /*========== Header ========== */
 .header {
   background-color: var(--primary-white);
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
 .logo-link {
+  margin: ;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -83,23 +126,35 @@ body {
 /*========== Hero ========== */
 .hero {
   background-color: var(--background-footer-hero);
+  text-align: center;
 }
 .main-title {
+  margin: 0 auto 30px;
+  padding-top: 200px;
+  padding-left: 452;
+  padding-right: 452;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /*text-align: center;*/
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white);
 }
 .modal-btn {
+  margin: 30px 700px 200px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center;
-  text-align: center;
+  /*align-items: center;*/
+  /*text-align: center;*/
   letter-spacing: 0.06em;
   color: var(--primary-white);
   background-color: var(--accent-color);
@@ -117,7 +172,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .about-title {
@@ -146,7 +200,13 @@ body {
 .team {
   color: var(--main-color);
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+.team-list {
+  display: flex;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;

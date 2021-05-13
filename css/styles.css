@@ -1,0 +1,241 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --background-color: #f5f4fa;
+  --main-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --btn-main-color: #188ce8;
+  --primary-white: #ffffff;
+  --accent-white: rgba(255, 255, 255, 0.6);
+  --background-footer-hero: #2f303a;
+  --logo-secondary-color: ##000000;
+  --background-project-color: #eeeeee;
+}
+
+body {
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ============= COMPONENTS ============= */
+.list {
+  list-style: none;
+}
+
+/*========== END COMPONENTS ============= */
+
+/*========== Header ========== */
+.header {
+  background-color: var(--primary-white);
+}
+
+.logo-link {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-secondary-color);
+  text-decoration: none;
+}
+
+.logo-first-link {
+  color: var(--accent-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.menu-link.current {
+  color: var(--accent-color);
+}
+.contact-item .link,
+.contact-item .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/*========== End Header ========== */
+
+/*========== Hero ========== */
+.hero {
+  background-color: var(--background-footer-hero);
+}
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--primary-white);
+  background-color: var(--btn-main-color);
+}
+
+/*========== End Hero ========== */
+/*========== About ========== */
+
+.hide-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-description {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+/*========== End about ========== */
+
+/*========== Work ========== */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*========== End Work ========== */
+
+/*========== Team ========== */
+.team {
+  color: var(--main-color);
+  background-color: var(--background-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-item .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+}
+
+/*========== End team========== */
+/*========== Footer========== */
+.footer {
+  background-color: var(--background-footer-hero);
+}
+.logo-secondary-link {
+  color: var(--primary-white);
+}
+
+.map-link {
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.mail-link,
+.tel-link {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--accent-white);
+  text-decoration: none;
+}
+.map-link:hover,
+.map-link:focus {
+  color: var(--accent-color);
+}
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--accent-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+
+/*========== End footer========== */
+
+/*========== Portfolio========== */
+
+/*==========Filter==========*/
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  display: flex;
+  text-align: center;
+  background-color: var(--background-color);
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-white);
+  background-color: var(--accent-color);
+}
+/*==========End filter==========*/
+/*==========Filter==========*/
+.project-item {
+  background-color: var(--background-project-color);
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
+/*==========End filter==========*/
+/*========== End portfolio========== */

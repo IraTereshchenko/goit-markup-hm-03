@@ -56,28 +56,42 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  background-color: teal;
+  /*background-color: teal;*/
 }
 /*========== END COMPONENTS ============= */
 
 /*========== Header ========== */
 .header {
   background-color: var(--primary-white);
+  /*padding-top: 24px;
+  padding-bottom: 24px;*/
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
-.menu {
+.menu-list {
   display: flex;
   align-items: center;
+  margin-left: 93px;
 }
+
+.menu-list .menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu-list .menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .logo-link {
-  margin: ;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -106,6 +120,19 @@ body {
 .menu-link.current {
   color: var(--accent-color);
 }
+.contact-list {
+  display: flex;
+  margin-left: 331px;
+}
+.contact-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-list .contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contact-item .link,
 .contact-item .link {
   font-weight: 500;
@@ -127,34 +154,32 @@ body {
 .hero {
   background-color: var(--background-footer-hero);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-title {
   margin: 0 auto 30px;
-  padding-top: 200px;
-  padding-left: 452;
-  padding-right: 452;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /*text-align: center;*/
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white);
 }
 .modal-btn {
-  margin: 30px 700px 200px;
   padding: 10px 32px;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
   height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  /*align-items: center;*/
-  /*text-align: center;*/
+  display: block;
+  align-items: center;
   letter-spacing: 0.06em;
   color: var(--primary-white);
   background-color: var(--accent-color);
@@ -167,14 +192,41 @@ body {
 
 /*========== End Hero ========== */
 /*========== About ========== */
+.about {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.hide-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-list {
+  display: flex;
+  /*align-items: center;*/
+  *padding-bottom: 0;
+  margin-top: -30px;
+  margin-left: -30px;*
+}
+
+.about-item {
+  /*width: 270px;*/
+  width: calc((100%-120px) / 4);
+  margin-top: 30px;
+  margin-left: 30px;*
 }
 
 .about-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -188,12 +240,28 @@ body {
 /*========== End about ========== */
 
 /*========== Work ========== */
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
 .work-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.work-list .item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 /*========== End Work ========== */
 
 /*========== Team ========== */
@@ -202,18 +270,24 @@ body {
   background-color: var(--background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  text-align: center;
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 .team-item .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -223,14 +297,38 @@ body {
   line-height: 1.19;
   color: var(--secondary-text-color);
 }
+.team-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
 
 /*========== End team========== */
 /*========== Footer========== */
 .footer {
   background-color: var(--background-footer-hero);
 }
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo-secondary-link {
   color: var(--primary-white);
+}
+.address {
+  margin-top: 20px;
+  display: block;
+}
+.address-text {
+  margin-bottom: 9px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .map-link {
@@ -265,7 +363,20 @@ body {
 /*========== Portfolio========== */
 
 /*==========Filter==========*/
+.filter {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.filter .list {
+  display: flex;
+  justify-content: center;
+}
+
 .filter-btn {
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -280,18 +391,43 @@ body {
   color: var(--primary-white);
   background-color: var(--accent-color);
 }
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 /*==========End filter==========*/
 /*==========Filter==========*/
+.project {
+  padding-bottom: 94px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
 .project-item {
+  margin-left: 30px;
+  margin-top: 30px;
   background-color: var(--background-project-color);
 }
+
+.project-card {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  background: var(--primary-white);
+  border: 1px solid var(--background-project-color);
+  border-top: 0;
+}
 .project-title {
+  margin-left: 24px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .project-text {
+  margin-left: 24px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;

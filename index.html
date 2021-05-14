@@ -24,7 +24,7 @@
                 <span class="logo-first-link">Web</span>Studio 
             </a>
 
-            <ul class="menu list" >
+            <ul class="menu-list list" >
                 <li class="menu-item">
                     <a class="menu-link current" href="index.html">Студия</a>
                 </li>
@@ -38,7 +38,7 @@
         </nav>
         
         
-        <ul class="list">
+        <ul class="contact-list list">
             <li class="contact-item">
                 <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -52,15 +52,19 @@
     <main>
         <!--Герой-->
         <section class="hero">
+            <div class="container">
             <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
             <button class="modal-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
+        
 
         <!--Особенности-->
-        <div class="container">
+        
         <section class="about">
-            <h2 class="hide-title">Особенности</h2>
-            <ul class="list">
+            <div class="container">
+            <h2 class="visually-hidden">Особенности</h2>
+            <ul class="about-list list">
                 <li class="about-item">
                     <h3 class="about-title">Внимание к деталям</h3>
                     <p class="about-description">
@@ -86,21 +90,22 @@
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
-        </div>
+       
         <!--Деятельность-->
-        <div class="container">
         <section class="work">
+            <div class="container">
             <h2 class="work-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li class="work-item"><img class="work-item-img" src="./images/action1.jpg" alt="руки человека пишут код на квавиатури" width="370"
+            <ul class="work-list list">
+                <li class="item"><img class="item-img" src="./images/action1.jpg" alt="руки человека пишут код на квавиатури" width="370"
                         height="294"></li>
-                <li class="work-item"><img class="work-item-img" src="./images/action2.jpg" alt="рука женщины держит телефон" width="370" height="294"></li>
-                <li class="work-item"><img class="work-item-img" src="./images/action3.jpg" alt="женщина держит планшет и выбирает цвет на планшете" width="370"
+                <li class="item"><img class="item-img" src="./images/action2.jpg" alt="рука женщины держит телефон" width="370" height="294"></li>
+                <li class="item"><img class="item-img" src="./images/action3.jpg" alt="женщина держит планшет и выбирает цвет на планшете" width="370"
                         height="294"></li>
             </ul>
-        </section>
         </div>
+        </section>
         <!--Команда-->
         <section class="team">
             <div class="container">
@@ -140,17 +145,18 @@
         </a>
 
         <address class="address">
-            <ul class="list">
-                <li class="adress-item">
-                <a class="map-link" href="https://goo.gl/maps/mj9vzz49X9CkKf8P8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="adress-item">
-                    <a class="mail-link link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li class="adress-item">
-                    <a class="tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
+                <p class="address-text">
+                    <a class="map-link" href="https://goo.gl/maps/mj9vzz49X9CkKf8P8" target="_blank" rel="noopener noreferrer">г.
+                        Киев, пр-т Леси Украинки, 26</a>
+                </p>
+                <ul class="list">
+                    <li class="address-item">
+                        <a class="mail-link link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="address-item">
+                        <a class="tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
         </address>
     </div>
     </footer>

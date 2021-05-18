@@ -56,15 +56,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /*background-color: teal;*/
 }
 /*========== END COMPONENTS ============= */
 
 /*========== Header ========== */
 .header {
   background-color: var(--primary-white);
-  /*padding-top: 24px;
-  padding-bottom: 24px;*/
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -212,17 +209,15 @@ body {
 
 .about-list {
   display: flex;
-  /*align-items: center;*/
-  *padding-bottom: 0;
+  padding-bottom: 0;
   margin-top: -30px;
-  margin-left: -30px;*
+  margin-left: -30px;
 }
 
 .about-item {
-  /*width: 270px;*/
   width: calc((100%-120px) / 4);
   margin-top: 30px;
-  margin-left: 30px;*
+  margin-left: 30px;
 }
 
 .about-title {
@@ -366,11 +361,12 @@ body {
 /*==========Filter==========*/
 .filter {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 94px;
 }
 .filter .list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-btn {
@@ -396,10 +392,7 @@ body {
   margin-right: 8px;
 }
 /*==========End filter==========*/
-/*==========Filter==========*/
-.project {
-  padding-bottom: 94px;
-}
+/*==========Project==========*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -431,5 +424,5 @@ body {
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
-/*==========End filter==========*/
+/*==========End Project==========*/
 /*========== End portfolio========== */
